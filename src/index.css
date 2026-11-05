@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #FFF8F4;
+    color: #302322;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(199, 93, 121, 0.25);
+    color: #801F3D;
+  }
+}
+
+/* Custom Luxury Gradients and Glassmorphism */
+.bg-hero-pattern {
+  background-color: #FFF8F4;
+  background-image: 
+    radial-gradient(at 10% 15%, rgba(244, 221, 225, 0.7) 0px, transparent 55%),
+    radial-gradient(at 90% 85%, rgba(200, 164, 106, 0.15) 0px, transparent 50%),
+    radial-gradient(at 85% 20%, rgba(199, 93, 121, 0.1) 0px, transparent 45%);
+}
+
+.bg-burgundy-luxury {
+  background: linear-gradient(135deg, #801F3D 0%, #5C1129 100%);
+}
+
+.bg-rose-luxury {
+  background: linear-gradient(135deg, #FFF8F4 0%, #F4DDE1 50%, #FAF0F2 100%);
+}
+
+.gold-border {
+  border: 1px solid rgba(200, 164, 106, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C8A46A 0%, #E6D2B1 50%, #B89255 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-nav {
+  background: rgba(255, 248, 244, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(200, 164, 106, 0.2);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(244, 221, 225, 0.6);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #C75D79;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #801F3D;
+}
